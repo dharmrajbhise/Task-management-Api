@@ -15,6 +15,7 @@ public class Homecontroller {
     @Autowired
     private TaskService Ts;
 
+    @CrossOrigin(origins = "http://localhost:4200")
     @GetMapping("/")
     public List<Tasks> home(Model model){
 
